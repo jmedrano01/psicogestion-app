@@ -1,0 +1,1 @@
+var e={user:null,aiSettings:new Map,onAiSettingsChanged:null,findStudent:null,findProfile:null};export{e as t};
