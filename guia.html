@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Cómo probar PsicoGestión Educativa</title>
+  <meta name="description" content="Pasos para instalar y probar PsicoGestión Educativa en la PC, Android e iPhone." />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="icon" type="image/png" href="./icons/icon-192.png" />
+  <style>
+    :root {
+      --bg: #f8fafc; --card: #ffffff; --text: #0f172a; --muted: #475569;
+      --line: #e2e8f0; --accent: #0f766e; --accent-soft: #ccfbf1; --warn: #92400e; --warn-soft: #fef3c7;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0a0a0a; --card: #171717; --text: #f1f5f9; --muted: #a3a3a3;
+        --line: #262626; --accent: #2dd4bf; --accent-soft: #134e4a; --warn: #fcd34d; --warn-soft: #422006; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+    header { display: flex; gap: 14px; align-items: center; margin-bottom: 8px; }
+    header img { width: 56px; height: 56px; border-radius: 14px; }
+    h1 { font-size: 1.6rem; line-height: 1.2; margin: 0; }
+    .lead { color: var(--muted); margin: 8px 0 28px; }
+    section { background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+      padding: 20px; margin-bottom: 16px; }
+    h2 { font-size: 1.15rem; margin: 0 0 10px; display: flex; gap: 10px; align-items: center; }
+    .n { display: inline-flex; width: 28px; height: 28px; border-radius: 50%; background: var(--accent);
+      color: var(--card); font-size: .9rem; align-items: center; justify-content: center; flex: none; }
+    ol, ul { margin: 0; padding-left: 1.3rem; }
+    li { margin: 6px 0; }
+    a { color: var(--accent); font-weight: 600; word-break: break-word; }
+    .btn { display: inline-block; margin: 6px 8px 6px 0; padding: 10px 16px; border-radius: 10px;
+      background: var(--accent); color: var(--card); text-decoration: none; min-height: 40px; }
+    .note { background: var(--accent-soft); border-radius: 10px; padding: 12px 14px; margin-top: 12px; }
+    .warn { background: var(--warn-soft); color: var(--text); border-radius: 10px; padding: 12px 14px; margin-top: 12px; }
+    .warn strong { color: var(--warn); }
+    kbd { border: 1px solid var(--line); border-radius: 6px; padding: 0 6px; font-size: .9em; }
+    footer { color: var(--muted); font-size: .9rem; text-align: center; margin-top: 24px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="./icons/icon-192.png" alt="" />
+    <h1>Cómo probar PsicoGestión Educativa</h1>
+  </header>
+  <p class="lead">Gestión psicopedagógica escolar para la República Dominicana: expedientes, pruebas,
+    planificación MINERD e informes. Funciona en la PC, en Android y en iPhone, y se sincroniza cifrado.</p>
+
+  <section>
+    <h2><span class="n">1</span> Instala la app en tu PC (Windows)</h2>
+    <a class="btn" href="https://github.com/jmedrano01/psicogestion-descargas/releases/latest">Descargar para Windows</a>
+    <ol>
+      <li>Descarga el archivo <strong>PsicoGestion-Educativa-…-x64.exe</strong>.</li>
+      <li>Ábrelo. Si Windows muestra «Windows protegió su PC», pulsa <strong>Más información → Ejecutar de todas formas</strong>
+        (la app todavía no tiene firma digital).</li>
+      <li>Crea tu cuenta con tu nombre y una contraseña.</li>
+    </ol>
+    <div class="warn"><strong>Guarda bien tu contraseña.</strong> Con ella se abren tus expedientes en la PC,
+      en otra PC y en el teléfono. No se puede recuperar.</div>
+  </section>
+
+  <section>
+    <h2><span class="n">2</span> Conecta tu cuenta a la nube</h2>
+    <ol>
+      <li>Instala en tu teléfono una app autenticadora: <strong>Google Authenticator</strong> o <strong>Microsoft Authenticator</strong>.</li>
+      <li>En la PC abre <strong>Ajustes → Nube</strong> y escribe tu correo.</li>
+      <li>Te llegará un correo con un <strong>código de 8 dígitos</strong>. Escríbelo en la app (revisa también «Spam»).</li>
+      <li>Escanea el código QR con la app autenticadora y escribe los 6 dígitos que muestra.</li>
+      <li>Pulsa <strong>Vincular</strong>. Desde ahí tus datos se sincronizan solos.</li>
+    </ol>
+    <div class="note">Cada persona tiene su propio consultorio en la nube. Nadie más ve tus expedientes,
+      y viajan cifrados: ni el servidor puede leerlos.</div>
+  </section>
+
+  <section>
+    <h2><span class="n">3</span> Instálala en tu teléfono</h2>
+    <a class="btn" href="./">Abrir la app web</a>
+    <ul>
+      <li><strong>Android (Chrome):</strong> abre la app web → menú <kbd>⋮</kbd> → <strong>Instalar app</strong>.</li>
+      <li><strong>iPhone (Safari):</strong> abre la app web → botón Compartir → <strong>Agregar a pantalla de inicio</strong>.</li>
+    </ul>
+    <p>Para entrar usa el mismo correo, el código de la app autenticadora y tu contraseña de PsicoGestión.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">4</span> IA (opcional y gratis)</h2>
+    <ol>
+      <li>Saca tu clave en <a href="https://aistudio.google.com/apikey">aistudio.google.com/apikey</a>.</li>
+      <li>Pégala en <strong>Ajustes → Inteligencia artificial</strong> (en la PC y en el teléfono).</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="n">5</span> Qué probar</h2>
+    <ul>
+      <li>Crear un expediente de prueba y verlo en el teléfono.</li>
+      <li>Editarlo en el teléfono y ver el cambio en la PC (al instante con «Sincronizar ahora»).</li>
+      <li>Grabar una nota de audio o subir una foto y abrirla en el otro equipo.</li>
+      <li>Hacer una planificación semanal o mensual y exportarla a PDF o Word (en la PC).</li>
+    </ul>
+    <div class="warn"><strong>Mientras sea una prueba, usa datos inventados</strong>, no expedientes de estudiantes reales.</div>
+  </section>
+
+  <section>
+    <h2><span class="n">6</span> Si algo falla</h2>
+    <p>Anota qué estabas haciendo y el mensaje que apareció (una captura de pantalla ayuda mucho)
+      y envíaselo a quien te invitó a probar.</p>
+    <p>Las actualizaciones llegan solas: la PC muestra «Reiniciar y actualizar» y el teléfono «Nueva versión lista».</p>
+  </section>
+
+  <footer>PsicoGestión Educativa · versión de prueba</footer>
+</main>
+</body>
+</html>
